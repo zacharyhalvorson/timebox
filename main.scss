@@ -1,15 +1,14 @@
 $buttonGreen: #8CC439;
 $buttonBlue: #4589E4;
 $background: #F4F3F4;
-
+$textPrimary: #585858;
 
 body{
-  font-family: "Helvetica";
+  font-family: "Helvetica Neue";
   text-align: center;
   padding: 50px 20px 0;
   background: $background;
-  color: #585858;
-  margin: 0;
+  color: $textPrimary;
 }
 
 h1, h2, h3, h4, body {
@@ -25,34 +24,57 @@ h2 {
 }
 
 a {
-  background: $buttonGreen;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  font-size: 18px;
-  color: #FFFFFF;
   text-decoration: none;
+  color: $textPrimary;
+}
+
+.title {
   &:hover {
-    cursor: pointer;
-    background: #B4EC51;
+    color: $buttonBlue;
   }
 }
 
-.box {
+.button {
+  background: $buttonGreen;
   padding: 15px 20px;
   border-radius: 8px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
   margin: 10px auto;
   width: auto;
   height: auto;
   display: inline-block;
+  &:hover {
+    cursor: pointer;
+    background: #B4EC51;
+    color: #fff;
+  }
+}
+
+.round {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 0;
+  margin-left: -25px;
+  position: absolute;
+}
+
+.next {
+  background-color: $buttonBlue;
+  &:hover {
+    background-color: #53A0FD;
+  }
 }
 
 .panel {
+  position: relative;
   padding: 20px 10px 30px 10px;
   border-radius: 8px;
   background-color: rgba(96,96,96,.14);
   width: 60%;
-  margin: 30px auto;
+  margin: 30px auto 60px auto;
 }
 
 label, input, a {
@@ -69,23 +91,7 @@ input:not([type="submit"]) {
   box-shadow:         inset 0px 1px 3px 1px rgba(0,0,0,0.31);
 }
 
-.done {
-  padding: 20px 35px;
-  font-size: 18px;
-  color: #fff;
-  background-color: $buttonBlue;
-  border: none;
-  border-radius: 8px;
-  margin: 20px auto;
-  height: auto;
-  width: auto;
-  display: inline-block;
-  &:hover {
-    background-color: #53A0FD;
-    cursor: pointer;
-  }
-}
-
-.ok, .add {
-  margin: -60px auto 0 auto;
-}
+//
+// .ok, .add {
+//   margin: -60px auto 0 auto;
+// }
