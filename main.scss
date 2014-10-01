@@ -51,6 +51,7 @@ a {
   width: auto;
   height: auto;
   display: inline-block;
+  @include span-columns(12);
 }
 
 .round {
