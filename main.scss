@@ -1,0 +1,30 @@
+$buttonGreen: #8CC439;
+
+
+body{
+  font-family: "Helvetica";
+  text-align: center;
+  font-weight: lighter;
+  padding: 50px 20px 0;
+  background: #F4F3F4;
+  color: #585858;
+  margin: 0;
+}
+
+h1{
+  font-weight: lighter;
+  font-size: 48px;
+}
+
+a {
+  padding: 20px 35px;
+  background: $buttonGreen;
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 43px;
+  border-radius: 8px;
+  &:hover {
+    cursor: pointer;
+    background: #B4EC51;
+  }
+}
