@@ -26,11 +26,17 @@ h2 {
 a {
   text-decoration: none;
   color: $textPrimary;
+  &:hover {
+    cursor: pointer;
+    background: #B4EC51;
+    color: #fff;
+  }
 }
 
 .title {
   &:hover {
     color: $buttonBlue;
+    background-color: $background;
   }
 }
 
@@ -45,11 +51,6 @@ a {
   width: auto;
   height: auto;
   display: inline-block;
-  &:hover {
-    cursor: pointer;
-    background: #B4EC51;
-    color: #fff;
-  }
 }
 
 .round {
@@ -70,7 +71,7 @@ a {
 
 .panel {
   position: relative;
-  padding: 20px 10px 30px 10px;
+  padding: 10px 10px 30px 10px;
   border-radius: 8px;
   background-color: rgba(96,96,96,.14);
   width: 60%;
@@ -81,17 +82,12 @@ label, input, a {
   display: block;
 }
 
-input:not([type="submit"]) {
+input {
   border: none;
   border-radius: 4px;
   padding: 15px 25px;
   width: 90%;
   margin: 10px auto;
-  -moz-box-shadow:    inset 0px 1px 3px 1px rgba(0,0,0,0.31);
-  box-shadow:         inset 0px 1px 3px 1px rgba(0,0,0,0.31);
+  -moz-box-shadow:    inset 0px 1px 2px 1px rgba(0,0,0,0.2);
+  box-shadow:         inset 0px 1px 2px 1px rgba(0,0,0,0.2);
 }
-
-//
-// .ok, .add {
-//   margin: -60px auto 0 auto;
-// }
